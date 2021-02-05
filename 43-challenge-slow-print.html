@@ -1,0 +1,62 @@
+
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+
+        <div id = 'root'>
+
+        </div>
+        <script src = "C:\Users\Niranjan\jan-2020-mern\reactjs\js\react.development.js"></script>
+
+        <script src = "C:\Users\Niranjan\jan-2020-mern\reactjs\js\react-dom.development.js"></script>
+
+        <script src = "C:\Users\Niranjan\jan-2020-mern\reactjs\js\babel.js"></script>
+
+        <script src = "C:\Users\Niranjan\jan-2020-mern\reactjs\js\axios.js"></script>
+
+        <script type ="text/babel"> 
+        
+            const rootHandle = document.getElementById('root')
+              class  SlowPrint  extends React.Component {
+                  constructor(){
+                      super()
+                      this.state={
+                          text : ''
+
+                      }
+                  }
+
+                  componentDidMount(){
+                      var text = 'This is a slowly printing text...'
+                      var textArray = text.split('')                      
+                      setInterval(()=>{
+                        this.setState((prevState)=>{
+                            if(textArray.length != 0){
+                            return{
+                                text : prevState.text + textArray.shift()
+                            }
+                          }
+                        }) 
+                      }, 300)
+                  }
+
+
+                  render(){
+                      return (
+                          <h2> {this.state.text}</h2> 
+                      )
+                  }
+              } 
+
+            ReactDOM.render( <SlowPrint/>  ,rootHandle) 
+        </script>
+    </body>
+</html>
+
+
+
+
+
+
