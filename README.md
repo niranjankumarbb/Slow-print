@@ -42,5 +42,6 @@ Quote
 
 - List one
   - list two
+  * list three
 
 ***
