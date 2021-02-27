@@ -41,6 +41,6 @@ Quote
   4. List one
 
 - List one
-  -list two
+  - list two
 
 ***
