@@ -6,7 +6,7 @@ Normal text
 _Italics_
 
 **Strong/Bold**
-
+ 
 ~~10000~~ **999**
 
 Links
@@ -38,7 +38,7 @@ Quote
 1. List one
 2. List two
 3. List three
-    4. List one
+   4. List one
 - List one
 
 ***
